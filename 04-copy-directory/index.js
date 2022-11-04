@@ -22,5 +22,16 @@ readdir(baseFolder, (err, files) => {
       path.join(__dirname, "files-copy", file),
       constants.COPYFILE_FICLONE
     );
+
+    // const readableStream = createReadStream(
+    //   path.join(__dirname, "files", file)
+    // );
+
+    // const output = createWriteStream(path.join(__dirname, "files-copy", file));
+
+    // readableStream.on("data", (chunk) => output.write(chunk));
+    // readableStream.on("error", (err) => {
+    //   if (err) throw err.message;
+    // });
   }
 });
