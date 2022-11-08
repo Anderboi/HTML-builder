@@ -21,7 +21,7 @@ fs.promises.readFile(baseHTML, "utf-8").then((data) => {
 
           fs.promises
             .writeFile(
-              path.join(__dirname, "project-dist", "template.html"),
+              path.join(__dirname, "project-dist", "index.html"),
               newData
             )
             .catch((err) => {
